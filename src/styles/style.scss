@@ -4,15 +4,61 @@ $title-font: 'Great vibes', cursive;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    // background-color: rgba(250, 235, 215, 0.286);
+    width: 100%;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin: 0 10px;
+
+            a {
+                cursor: pointer;  
+                font-weight: 560;
+                color: white;
+                transition: all 0.3s ease-in;
+                &:hover {
+                    color: rgb(254, 239, 28);
+                    scale: 1.05;
+                    text-shadow: yellow 1px 1px 20px;
+                }
+            }
+        }
+
+        .slash {
+            margin-left: 1rem;
+            font-weight: 500;
+            font-size: 28px;
+            color: white;
+        }
+    }
 }
 .main-container {
     text-align: center;
     color: white;
+    max-width: 700px;
+    word-wrap: break-word;
 
-    p {
+    h5 {
         font-size: 2rem;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
     }
 }
 
@@ -20,14 +66,22 @@ $title-font: 'Great vibes', cursive;
     font-family: $title-font;
     font-size: 8rem;
     text-shadow: #acacac -3px 9px 20px;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-family: serif;
+    font-size: 2rem;
 }
 
 #content {
+    position: relative;
     background: url(../images/front1.jpg) rgba(0, 0, 0, .5);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     justify-content: center;

@@ -1,4 +1,4 @@
-import './styles/style.scss'
-import loadPage from './pageLoad'
+import './styles/style.scss';
+import loadPage from './pageLoad';
 
 loadPage();
