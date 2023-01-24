@@ -1,4 +1,7 @@
+import { createFront } from './frontPage'
+
 export default function loadPage() {
     const contentDiv = document.getElementById('content');
-    contentDiv.textContent = 'Hello world';
+    const pageContent = createFront();
+    contentDiv.append(pageContent);
 }
