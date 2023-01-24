@@ -1,1 +1,4 @@
-console.log('Hello webpack');
+import './styles/style.scss'
+import loadPage from './pageLoad'
+
+loadPage();
