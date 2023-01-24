@@ -8,6 +8,19 @@ $title-font: 'Great vibes', cursive;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background: url(../images/front1.jpg) rgba(0, 0, 0, .3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     position: fixed;
     top: 10%;
@@ -35,9 +48,9 @@ $title-font: 'Great vibes', cursive;
                 color: white;
                 transition: all 0.3s ease-in;
                 &:hover {
-                    color: rgb(254, 239, 28);
+                    color: rgb(234, 224, 86);
                     scale: 1.05;
-                    text-shadow: yellow 1px 1px 20px;
+                    text-shadow: yellow 1px 1px 15px;
                 }
             }
         }
@@ -75,14 +88,8 @@ $title-font: 'Great vibes', cursive;
 }
 
 #content {
-    position: relative;
-    background: url(../images/front1.jpg) rgba(0, 0, 0, .5);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    min-height: 100vh;
+    // position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;

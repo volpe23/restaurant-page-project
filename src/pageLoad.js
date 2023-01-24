@@ -1,6 +1,7 @@
 import { createFront } from './frontPage'
+import { createMenu } from './menu';
 
-
+const contentDiv = document.getElementById('content');
 
 const navbar = () => {
     const nav = document.createElement('nav');
@@ -22,6 +23,17 @@ const createUl = () => {
         anchor.textContent = link;
         anchor.setAttribute('id', `${link.toLowerCase()}`);
 
+        anchor.addEventListener('click', () => {
+            contentDiv.innerHTML = '';
+            switch (link) {
+                case 'Home':
+                    contentDiv.append(createFront());
+                    break;
+                case 'Menu':
+                    contentDiv.append(createMenu());
+                    break;  
+        }});
+
         const slash = document.createElement('span');
         if (i !== navLinks.length - 1) {
             slash.classList.add('slash');
@@ -36,9 +48,11 @@ const createUl = () => {
 }
 
 export default function loadPage() {
-    const contentDiv = document.getElementById('content');
+    
+    const body = document.querySelector('body');
     const pageContent = createFront();
     const nav = navbar();
-    contentDiv.append(pageContent, nav);
+    body.prepend(nav);
+    contentDiv.append(pageContent);
     
 }
