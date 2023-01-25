@@ -2,6 +2,7 @@ import './styles/style.scss';
 // import { navbar } from './pageLoad';
 import { createMenu } from './menu';
 import { createFront } from './frontPage';
+import { createContacts } from './contact'
 
 
 
@@ -31,7 +32,7 @@ const navbar = () => {
 
     const homeTab = navLink('Home', createFront());
     const menuTab = navLink('Menu', createMenu());
-    const contactsTab = navLink('Contacts', console.log('Cont'));
+    const contactsTab = navLink('Contacts', createContacts());
     ul.append(homeTab, menuTab, contactsTab);
     nav.append(ul);
 
