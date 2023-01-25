@@ -1,4 +1,4 @@
-import './styles/contactStyle.scss'
+import './styles/contactStyle.scss';
 
 class WorkHour {
     constructor(day, startHour, endHour) {
@@ -40,8 +40,7 @@ const createContacts = () => {
     map.height = 300;
     map.referrerPolicy = 'no-referrer-when-downgrade';
 
-{/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29569.66952635364!2d12.227015156333524!3d41.756028917933996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325fb1d165df417%3A0xab7d6dc5bcc9bd0d!2sDa%20Cacio%20e%20Pepe!5e0!3m2!1slv!2slv!4v1674654871204!5m2!1slv!2slv"
- width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+    
     contactDiv.append(workHours, map);
 
     return contactDiv;

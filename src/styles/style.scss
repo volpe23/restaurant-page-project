@@ -21,6 +21,15 @@ body {
     align-items: center;
 }
 
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+
+}
+
 .navbar {
     position: fixed;
     top: 10%;
@@ -78,6 +87,7 @@ body {
 .title {
     font-family: $title-font;
     font-size: 8rem;
+    color: white;
     text-shadow: #acacac -3px 9px 20px;
     margin-bottom: 30px;
 }
@@ -93,4 +103,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    // max-width: 1000px;
+    width: 100%;
 }

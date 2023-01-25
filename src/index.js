@@ -40,6 +40,7 @@ const navbar = () => {
 }
 const contentDiv = document.getElementById('content');
 const pageContent = document.createElement('main');
+
 const nav = navbar()
 contentDiv.append(nav, pageContent);
 

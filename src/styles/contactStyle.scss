@@ -1,0 +1,20 @@
+.contacts {
+    background-color: rgba(250, 235, 215, 0.726);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.work {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    width:max-content;
+    padding: 10px;
+}
