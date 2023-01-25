@@ -1,58 +1,61 @@
 import { createFront } from './frontPage'
 import { createMenu } from './menu';
 
-const contentDiv = document.getElementById('content');
+// class NavLink {
 
-const navbar = () => {
-    const nav = document.createElement('nav');
-    nav.classList.add('navbar');
-    const ul = createUl()
-    nav.append(ul);
+//     constructor(name, eventFunc) {
+//         this.name = name;
+//     }
 
-    return nav;
-}
+//     addEventListener(func) {
+//         this.anchor = 
+//         this.item.addEventListener('click', () => func); 
+//     }
+// }
 
-const createUl = () => {
-    const navLinks = ['Home', 'Menu', 'Contacts'];
-    const ul = document.createElement('ul');
 
-    navLinks.forEach((link, i)=> {
-        const li = document.createElement('li');
 
-        const anchor = document.createElement('a');
-        anchor.textContent = link;
-        anchor.setAttribute('id', `${link.toLowerCase()}`);
+// const createUl = () => {
+//     const navLinks = ['Home', 'Menu', 'Contacts'];
+//     const ul = document.createElement('ul');
 
-        anchor.addEventListener('click', () => {
-            contentDiv.innerHTML = '';
-            switch (link) {
-                case 'Home':
-                    contentDiv.append(createFront());
-                    break;
-                case 'Menu':
-                    contentDiv.append(createMenu());
-                    break;  
-        }});
+//     navLinks.forEach((link, i)=> {
+//         const li = document.createElement('li');
 
-        const slash = document.createElement('span');
-        if (i !== navLinks.length - 1) {
-            slash.classList.add('slash');
-            slash.textContent = '/';
-        }
+//         const anchor = document.createElement('a');
+//         anchor.textContent = link;
+//         anchor.setAttribute('id', `${link.toLowerCase()}`);
 
-        li.append(anchor, slash);
+//         anchor.addEventListener('click', () => {
+//             contentDiv.innerHTML = '';
+//             switch (link) {
+//                 case 'Home':
+//                     contentDiv.append(createFront());
+//                     break;
+//                 case 'Menu':
+//                     contentDiv.append(createMenu());
+//                     break;  
+//         }});
 
-        ul.appendChild(li)
-    })
-    return ul;
-}
+//         const slash = document.createElement('span');
+//         if (i !== navLinks.length - 1) {
+//             slash.classList.add('slash');
+//             slash.textContent = '/';
+//         }
 
-export default function loadPage() {
+//         li.append(anchor, slash);
+
+//         ul.appendChild(li)
+//     })
+//     return ul;
+// }
+
+// export default function loadPage() {
     
-    const body = document.querySelector('body');
-    const pageContent = createFront();
-    const nav = navbar();
-    body.prepend(nav);
-    contentDiv.append(pageContent);
+//     const body = document.querySelector('body');
+//     const pageContent = createFront();
+//     const nav = navbar();
+//     // body.prepend(nav);
+//     contentDiv.append(pageContent);
     
-}
+// }

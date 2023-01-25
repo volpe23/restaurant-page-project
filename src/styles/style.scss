@@ -48,9 +48,9 @@ body {
                 color: white;
                 transition: all 0.3s ease-in;
                 &:hover {
-                    color: rgb(234, 224, 86);
+                    color: #fde68a;
                     scale: 1.05;
-                    text-shadow: yellow 1px 1px 15px;
+                    text-shadow: rgb(227, 219, 9) 1px 1px 15px;
                 }
             }
         }
